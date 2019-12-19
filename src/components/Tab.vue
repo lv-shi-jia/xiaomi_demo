@@ -30,9 +30,11 @@ export default {
   width: 100%;
   height: 0.9rem;
   position: fixed;
+  background: #fff;
   left: 0;
   bottom: 0;
   display: flex;
+  z-index: 2;
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid #cccccc;
