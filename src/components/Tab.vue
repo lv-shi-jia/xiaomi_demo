@@ -8,7 +8,7 @@
         <van-tabbar-item icon="search">分类</van-tabbar-item>
       </router-link>
       <router-link to="Shopping">
-        <van-tabbar-item icon="friends-o">购物车</van-tabbar-item>
+        <van-tabbar-item icon="friends-o" :info="info">购物车</van-tabbar-item>
       </router-link>
       <router-link to="Mine">
         <van-tabbar-item icon="setting-o">个人</van-tabbar-item>
@@ -20,8 +20,12 @@
 export default {
   data() {
     return {
-      active: 0
+      active: 0,
+      info:""
     };
+  },
+  mounted(){
+    this.info=localStorage.getItem('key')
   }
 };
 </script>
@@ -33,6 +37,7 @@ export default {
   left: 0;
   bottom: 0;
   display: flex;
+  background: #fff;
   justify-content: space-around;
   align-items: center;
   border-top: 1px solid #cccccc;
