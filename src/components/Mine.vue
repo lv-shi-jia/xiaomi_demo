@@ -28,15 +28,12 @@
         <van-cell title="我的名片" icon="qr" is-link />
       </div>
     </div>
-    <tab></tab>
   </div>
 </template>
 <script>
-import Tab from './Tab.vue'
+import Tab from "./Tab.vue";
 export default {
-  components:{
-    Tab
-  },
+  components: {},
   methods: {
     receive() {
       this.$router.push("/Receive");

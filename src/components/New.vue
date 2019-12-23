@@ -12,7 +12,7 @@
       show-search-result
       :search-result="searchResult"
       :area-columns-placeholder="['请选择', '请选择', '请选择']"
-      @save="onSave"
+      @save="fn"
       @delete="onDelete"
       @change-detail="onChangeDetail"
     />
@@ -24,14 +24,23 @@ export default {
   data() {
     return {
       allcity: allcity,
-      searchResult: []
+      searchResult: [],
+      arr:[],
+      a:0
     };
   },
 
   methods: {
-    onSave() {
-      Toast("save");
+    // onSave() {
+    //   Toast("save");
+    // },
+    fn(content){
+     
+      // this.arr.push({id:this.a,name:this.name,tel:this.tle,address:`${province:province,city:city,county:county}`,postalCode:postalCode,isDefault:isDefault) 
+      // console.log(content)
+     
     },
+   
     onDelete() {
       Toast("delete");
     },

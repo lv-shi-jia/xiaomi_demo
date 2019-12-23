@@ -7,10 +7,10 @@
       <router-link to="/Classify">
         <van-tabbar-item icon="search">分类</van-tabbar-item>
       </router-link>
-      <router-link to="Shopping">
+      <router-link to="/Shopping">
         <van-tabbar-item icon="friends-o">购物车</van-tabbar-item>
       </router-link>
-      <router-link to="Mine">
+      <router-link to="/Mine">
         <van-tabbar-item icon="setting-o">个人</van-tabbar-item>
       </router-link>
     </van-tabbar>

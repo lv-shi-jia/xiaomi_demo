@@ -40,14 +40,13 @@
         </li>
       </ol>
     </div> 
-    <tab></tab>
   </div>
 </template>
 <script>
 import Tab from './Tab.vue'
 export default {
   components:{
-      Tab
+     
   },
   data() {
     return {

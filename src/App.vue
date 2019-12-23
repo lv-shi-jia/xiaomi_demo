@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <!-- <tab></tab> -->
+    <tab></tab>
     <router-view/>
   </div>
 </template>
 
 <script>
-// import Tab from './components/Tab.vue'
+import Tab from './components/Tab.vue'
 export default {
   name: 'App',
   components:{
-    // Tab
+    Tab
   }
 }
 </script>

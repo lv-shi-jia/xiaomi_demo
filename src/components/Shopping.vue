@@ -27,7 +27,7 @@
           <p>￥ {{item.money}}</p>
           <van-stepper v-model="item.value" class="abc" />
         </div>
-        <van-icon name="delete" size="30px" />
+        <van-icon name="delete" size="30px"  @click='del(index)'/>
       </div>
     </div>
     <div class="love">
@@ -64,7 +64,8 @@ export default {
   data() {
     return {
       ars: [],
-      arr: []
+      arr:JSON.parse(localStorage.getItem("name"))|| []
+      
     };
   },
   methods: {
@@ -73,7 +74,12 @@ export default {
     },
     gog() {
       history.back();
-    }
+    },
+    del(i){
+      this.arr.splice(i,1)
+      localStorage.removeItem('name')
+      console.log(localStorage.getItem('name'))
+    } 
   },
   mounted() {
     // 商品
@@ -87,7 +93,7 @@ export default {
         this.ars = res.data;
 
       });
-    this.arr = JSON.parse(localStorage.getItem("name"));
+
   },
   computed: {
     //件数
